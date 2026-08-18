@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Opera — Scintuart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Scintuart — Home">
+    <img src="assets/images/logo.png" alt="Scintuart" />
+  </a>
+  <nav class="nav-desktop">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="works.html">Works</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <span class="eyebrow">Sardegna, Italia — © <span class="js-year"></span></span>
+</nav>
+
+<main data-work-detail>
+  <!-- Popolato dinamicamente da js/render.js in base a ?id= -->
+</main>
+
+<footer class="site-footer">
+  <span>© <span class="js-year"></span> Scintuart. Tutti i diritti riservati.</span>
+  <div class="footer-social">
+    <a href="works.html">Works</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/works-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>

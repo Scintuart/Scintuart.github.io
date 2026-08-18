@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" width="1000" height="1300">
+  <defs>
+    <linearGradient id="gabout" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(141,14%,88%)"/>
+      <stop offset="55%" stop-color="hsl(171,16%,80%)"/>
+      <stop offset="100%" stop-color="hsl(341,10%,74%)"/>
+    </linearGradient>
+    <filter id="blurabout"><feGaussianBlur stdDeviation="46"/></filter>
+  </defs>
+  <rect width="1000" height="1300" fill="url(#gabout)"/>
+  <g filter="url(#blurabout)"><circle cx="151" cy="575" r="320" fill="hsl(188,20%,59%)" opacity="0.18" />
+<circle cx="709" cy="750" r="237" fill="hsl(129,11%,71%)" opacity="0.12" />
+<circle cx="165" cy="882" r="434" fill="hsl(204,22%,59%)" opacity="0.10" />
+<circle cx="71" cy="16" r="290" fill="hsl(207,18%,58%)" opacity="0.20" />
+<circle cx="624" cy="732" r="171" fill="hsl(209,18%,59%)" opacity="0.20" />
+</g>
+  <rect width="1000" height="1300" fill="none" stroke="rgba(23,20,15,0.08)" stroke-width="2"/>
+</svg>
