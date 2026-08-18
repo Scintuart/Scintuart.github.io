@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="gopera-1-cover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(0,14%,88%)"/>
+      <stop offset="55%" stop-color="hsl(30,16%,80%)"/>
+      <stop offset="100%" stop-color="hsl(200,10%,74%)"/>
+    </linearGradient>
+    <filter id="bluropera-1-cover"><feGaussianBlur stdDeviation="46"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#gopera-1-cover)"/>
+  <g filter="url(#bluropera-1-cover)"><circle cx="576" cy="447" r="350" fill="hsl(19,14%,67%)" opacity="0.12" />
+<circle cx="1056" cy="846" r="310" fill="hsl(24,17%,64%)" opacity="0.21" />
+<circle cx="1361" cy="593" r="470" fill="hsl(46,21%,59%)" opacity="0.18" />
+<circle cx="128" cy="627" r="294" fill="hsl(58,21%,72%)" opacity="0.13" />
+<circle cx="148" cy="709" r="490" fill="hsl(49,11%,56%)" opacity="0.12" />
+</g>
+  <rect width="1600" height="1000" fill="none" stroke="rgba(23,20,15,0.08)" stroke-width="2"/>
+</svg>
