@@ -8,30 +8,35 @@
  *
  * Ogni categoria ha:
  *  slug            - identificativo stabile usato in works.html?cat=...
- *  label           - etichetta visibile
+ *  label           - { it, en } etichetta visibile nelle due lingue.
+ *                    Risolta a runtime con localize(label) (js/i18n.js).
  *  subcategories   - array di { slug, label }. Lascia [] se la categoria
- *                    non ha sottocategorie (es. Scultura, Video): in quel
- *                    caso works.html?cat=<slug> mostra subito la galleria,
+ *                    non ha sottocategorie (es. Video): in quel caso
+ *                    works.html?cat=<slug> mostra subito la galleria,
  *                    senza passare per una scelta di sottocategoria.
  */
 const CATEGORIES = [
   {
     slug: "disegno",
-    label: "Disegno",
+    label: { it: "Disegno", en: "Drawing" },
     subcategories: [
-      { slug: "elaborazione-digitale", label: "Elaborazione digitale" },
-      { slug: "disegno-digitale", label: "Disegno digitale" },
-      { slug: "editoria", label: "Editoria" }
+      { slug: "elaborazione-digitale", label: { it: "Elaborazione digitale", en: "Digital Processing" } },
+      { slug: "disegno-digitale", label: { it: "Disegno digitale", en: "Digital Drawing" } },
+      { slug: "editoria", label: { it: "Editoria", en: "Publishing" } }
     ]
   },
   {
-    slug: "scultura",
-    label: "Scultura",
-    subcategories: []
+    slug: "legno",
+    label: { it: "Legno", en: "Wood" },
+    subcategories: [
+      { slug: "scultura", label: { it: "Scultura", en: "Sculpture" } },
+      { slug: "bassorilievi", label: { it: "Bassorilievi", en: "Bas-reliefs" } },
+      { slug: "gioielli", label: { it: "Gioielli", en: "Jewellery" } }
+    ]
   },
   {
     slug: "video",
-    label: "Video",
+    label: { it: "Video", en: "Video" },
     subcategories: []
   }
 ];
@@ -60,9 +65,9 @@ function getWorksByCategory(catSlug, subSlug) {
 }
 
 /**
- * Etichetta leggibile della categoria/sottocategoria di un'opera, pronta
- * per essere mostrata in targhetta o nell'eyebrow della pagina opera.
- * Ritorna null se l'opera non ha ancora una categoria assegnata.
+ * Etichetta leggibile (nella lingua corrente) della categoria/sottocategoria
+ * di un'opera, pronta per essere mostrata in targhetta o nell'eyebrow della
+ * pagina opera. Ritorna null se l'opera non ha ancora una categoria assegnata.
  */
 function getWorkCategoryLabel(work) {
   if (!work.category) return null;
@@ -70,9 +75,9 @@ function getWorkCategoryLabel(work) {
   if (!cat) return null;
   if (work.subcategory) {
     const sub = getSubcategoryBySlug(work.category, work.subcategory);
-    if (sub) return sub.label;
+    if (sub) return localize(sub.label);
   }
-  return cat.label;
+  return localize(cat.label);
 }
 
 /**
@@ -138,7 +143,8 @@ const WORKS = [
     year: 2023,
     medium: "Scultura in bronzo",
     dimensions: "60 × 40 × 35 cm",
-    category: "scultura",
+    category: "legno",
+    subcategory: "scultura",
     description: [
       "Testo segnaposto: descrivi qui il concetto, il contesto e il processo dietro quest'opera."
     ],
@@ -180,7 +186,7 @@ const WORKS = [
     // ⚠️ TODO: opera precedentemente etichettata "Fotografia", categoria
     // rimossa dalla tassonomia su richiesta dell'artista (Scintuart non è
     // un fotografo). Lasciata volutamente SENZA categoria: non comparirà
-    // in nessuna galleria filtrata (Disegno/Scultura/Video), ma resta
+    // in nessuna galleria filtrata (Disegno/Legno/Video), ma resta
     // visibile nell'archivio completo works.html (senza ?cat=). Assegnale
     // una categoria reale quando deciderai dove collocarla, oppure
     // rimuovila se non deve più far parte del portfolio.
