@@ -167,6 +167,31 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
 .nav-desktop a:hover::after,
 .nav-desktop a.is-active::after { right: 0; }
 
+/* Selettore lingua IT | EN — discreto, stesso trattamento tipografico
+   dell'eyebrow (mono, piccolo, muted), per non competere visivamente
+   con i link di navigazione principali. */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+.lang-switch button {
+  color: var(--text-faint);
+  transition: color var(--dur-s) var(--ease);
+}
+.lang-switch button:hover,
+.lang-switch button:focus-visible { color: var(--text); }
+.lang-switch button[aria-current="true"] { color: var(--accent); }
+.lang-switch-sep { color: var(--line-strong); }
+
+.nav-mobile .lang-switch {
+  margin-top: 0.5rem;
+  font-size: 0.76rem;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
