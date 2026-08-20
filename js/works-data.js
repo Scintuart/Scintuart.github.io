@@ -242,6 +242,23 @@ const WORKS = [
       src: "assets/video/opera-6.mp4",
       poster: "assets/images/opera-6-video-poster.svg"
     }
+  },
+  {
+    id: "opera-7",
+    title: "Gab",
+    year: 2015,
+    medium: "Elaborazione con Photoshop, silhouette a doppia esposizione",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "elaborazione-digitale",
+    description: [
+      "Una figura pensierosa si staglia su uno sfondo di città bagnata. La persona riflette sulle difficoltà che quella città, ormai segnata dai problemi, le pone davanti."
+    ],
+    cover: "assets/images/ELABORAZIONE DIGITALE/gab.jpg"
+    // Nessun campo "gallery": l'unica immagine disponibile è già usata come
+    // cover. Aggiungendola anche in gallery si duplicherebbe la stessa
+    // immagine in una sezione "Galleria" ridondante — il campo è opzionale
+    // (come "video"), quindi omesso finché non ci sono altre foto reali.
   }
 ];
 
