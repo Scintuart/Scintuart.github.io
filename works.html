@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Works — Scintuart</title>
-<meta name="description" content="Tutte le opere di Scintuart: disegno, scultura, video e fotografia." />
+<title>Lavori — Scintuart</title>
+<meta name="description" content="Tutte le opere di Scintuart: disegno, scultura e video." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -19,7 +19,7 @@
   </a>
   <nav class="nav-desktop">
     <a href="index.html">Home</a>
-    <a href="works.html">Works</a>
+    <a href="works.html">Lavori</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
@@ -30,7 +30,7 @@
 
 <nav class="nav-mobile">
   <a href="index.html">Home</a>
-  <a href="works.html">Works</a>
+  <a href="works.html">Lavori</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
   <span class="eyebrow">Sardegna, Italia — © <span class="js-year"></span></span>
@@ -38,12 +38,13 @@
 
 <main>
   <section class="page-intro container">
-    <div class="eyebrow reveal">Archivio</div>
-    <h1 class="reveal">Works</h1>
-    <p class="lede reveal" style="margin-top:1.25rem;">Una selezione di opere realizzate tra disegno, scultura, video e fotografia.</p>
+    <div class="eyebrow reveal" data-breadcrumb>Archivio</div>
+    <h1 class="reveal" data-page-title>Lavori</h1>
+    <p class="lede reveal" data-page-lede style="margin-top:1.25rem;">Una selezione di opere realizzate tra disegno, scultura e video.</p>
   </section>
 
   <section class="container">
+    <div class="category-tiles" data-category-tiles></div>
     <div class="works-list" data-works-list></div>
   </section>
 </main>
