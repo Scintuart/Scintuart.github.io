@@ -259,6 +259,21 @@ const WORKS = [
     // cover. Aggiungendola anche in gallery si duplicherebbe la stessa
     // immagine in una sezione "Galleria" ridondante — il campo è opzionale
     // (come "video"), quindi omesso finché non ci sono altre foto reali.
+  },
+  {
+    id: "opera-8",
+    title: "SEB",
+    year: 2015,
+    medium: "Elaborazione digitale con Photoshop, esposizioni multiple",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "elaborazione-digitale",
+    description: [
+      "Figura in sospensione, nella lettura della magnificenza artistica londinese. Stupore."
+    ],
+    cover: "assets/images/ELABORAZIONE DIGITALE/seb.jpg"
+    // Nessun campo "gallery" per lo stesso motivo di opera-7 (Gab): un'unica
+    // immagine reale disponibile, già usata come cover.
   }
 ];
 
