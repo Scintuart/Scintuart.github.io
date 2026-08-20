@@ -91,7 +91,7 @@ function renderWorksPage() {
   if (titleEl) titleEl.textContent = activeLabel;
   if (ledeEl) {
     ledeEl.textContent = works.length
-      ? `${works.length} opera${works.length === 1 ? "" : "e"} in questa sezione.`
+      ? `${works.length} ${works.length === 1 ? "opera" : "opere"} in questa sezione.`
       : "Nessuna opera pubblicata in questa sezione, per ora.";
   }
   if (tilesEl) tilesEl.innerHTML = "";
@@ -107,7 +107,7 @@ function renderCategoryTiles(category, container) {
       return `
         <a class="category-tile reveal" href="works.html?cat=${category.slug}&sub=${sub.slug}">
           <h3>${sub.label}</h3>
-          <span class="eyebrow">${count} opera${count === 1 ? "" : "e"}</span>
+          <span class="eyebrow">${count} ${count === 1 ? "opera" : "opere"}</span>
         </a>`;
     })
     .join("");
