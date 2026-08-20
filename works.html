@@ -18,10 +18,15 @@
     <img src="assets/images/logo.png" alt="Scintuart" />
   </a>
   <nav class="nav-desktop">
-    <a href="index.html">Home</a>
-    <a href="works.html">Lavori</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="works.html" data-i18n="nav.works">Lavori</a>
+    <a href="about.html" data-i18n="nav.about">Chi sono</a>
+    <a href="contact.html" data-i18n="nav.contact">Contatti</a>
+    <div class="lang-switch" role="group" aria-label="Lingua / Language">
+      <button type="button" data-lang-btn="it">IT</button>
+      <span class="lang-switch-sep" aria-hidden="true">|</span>
+      <button type="button" data-lang-btn="en">EN</button>
+    </div>
   </nav>
   <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -29,10 +34,15 @@
 </header>
 
 <nav class="nav-mobile">
-  <a href="index.html">Home</a>
-  <a href="works.html">Lavori</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="works.html" data-i18n="nav.works">Lavori</a>
+  <a href="about.html" data-i18n="nav.about">Chi sono</a>
+  <a href="contact.html" data-i18n="nav.contact">Contatti</a>
+  <div class="lang-switch" role="group" aria-label="Lingua / Language">
+    <button type="button" data-lang-btn="it">IT</button>
+    <span class="lang-switch-sep" aria-hidden="true">|</span>
+    <button type="button" data-lang-btn="en">EN</button>
+  </div>
   <span class="eyebrow">Sardegna, Italia — © <span class="js-year"></span></span>
 </nav>
 
@@ -52,11 +62,12 @@
 <footer class="site-footer">
   <span>© <span class="js-year"></span> Scintuart. Tutti i diritti riservati.</span>
   <div class="footer-social">
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" data-i18n="nav.contact">Contatti</a>
     <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/works-data.js"></script>
 <script src="js/main.js"></script>
 <script src="js/render.js"></script>
