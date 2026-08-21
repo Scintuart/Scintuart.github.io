@@ -759,6 +759,22 @@ section { padding-block: clamp(5rem, 10vw, 10rem); }
 .page-intro { padding-top: clamp(7rem, 14vw, 10rem); padding-bottom: 0; }
 .page-intro h1 { font-size: clamp(2.4rem, 6vw, 4.25rem); max-width: 18ch; margin-top: 0.75rem; }
 
+/* Fascia visiva di apertura sezione — usata esclusivamente da
+   works.html per una singola sottocategoria specifica (vedi render.js).
+   È un figlio diretto di <main> (non di .container) per estendersi
+   naturalmente da bordo a bordo, senza trucchi di larghezza. Nascosta di
+   default: diventa visibile solo quando JS aggiunge .is-active. */
+.subcategory-banner {
+  display: none;
+  width: 100%;
+  height: clamp(160px, 26vw, 320px);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.subcategory-banner.is-active { display: block; }
+
 /* =========================================================
    RESPONSIVE
    ========================================================= */

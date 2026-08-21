@@ -160,24 +160,6 @@ const WORKS = [
     }
   },
   {
-    id: "opera-3",
-    title: "Meridiana",
-    year: 2023,
-    medium: "Tecnica mista su carta",
-    dimensions: "70 × 50 cm",
-    category: "disegno",
-    subcategory: "elaborazione-digitale",
-    description: [
-      "Testo segnaposto: descrivi qui il concetto, il contesto e il processo dietro quest'opera."
-    ],
-    cover: "assets/images/opera-3-cover.svg",
-    gallery: [
-      "assets/images/opera-3-gallery-1.svg",
-      "assets/images/opera-3-gallery-2.svg",
-      "assets/images/opera-3-gallery-3.svg"
-    ]
-  },
-  {
     id: "opera-4",
     title: "Controluce",
     year: 2022,

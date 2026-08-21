@@ -66,6 +66,23 @@ function renderWorksPage() {
   const breadcrumbEl = document.querySelector("[data-breadcrumb]");
   const titleEl = document.querySelector("[data-page-title]");
   const ledeEl = document.querySelector("[data-page-lede]");
+  const bannerEl = document.querySelector("[data-subcategory-banner]");
+
+  // La fascia visiva è disattivata di default: viene accesa esplicitamente
+  // solo per la combinazione esatta cat=disegno&sub=disegno-digitale, mai
+  // altrove (nessuna scheda opera, nessuna galleria filtrata diversa,
+  // nessuna vista a tile, nessun archivio).
+  function setBanner(active) {
+    if (!bannerEl) return;
+    if (active) {
+      bannerEl.style.backgroundImage = "url('assets/images/disegno-digitale-banner.jpg')";
+      bannerEl.classList.add("is-active");
+    } else {
+      bannerEl.classList.remove("is-active");
+      bannerEl.style.backgroundImage = "";
+    }
+  }
+  setBanner(false);
 
   const params = new URLSearchParams(window.location.search);
   let catSlug = params.get("cat");
@@ -105,6 +122,11 @@ function renderWorksPage() {
     listEl.innerHTML = "";
     renderCategoryTiles(category, tilesEl);
     return;
+  }
+
+  // Fascia visiva di apertura sezione: solo Disegno → Disegno digitale.
+  if (catSlug === "disegno" && subSlug === "disegno-digitale") {
+    setBanner(true);
   }
 
   // Categoria senza sottocategorie (Video) → galleria diretta
