@@ -280,6 +280,75 @@ const WORKS = [
     cover: "assets/images/ELABORAZIONE DIGITALE/seb.jpg"
     // Nessun campo "gallery" per lo stesso motivo di opera-7 (Gab): un'unica
     // immagine reale disponibile, già usata come cover.
+  },
+
+  // opera-9 … opera-13: 5 opere reali in legno (bassorilievi). Dati forniti
+  // dall'artista: anno, dimensioni, tecnica e descrizione. Immagini reali,
+  // non toccate.
+  {
+    id: "opera-9",
+    title: "Ballo",
+    year: 2019,
+    medium: "Incisione fatta a mano con mezzi rotativi e scalpelli. Bassorilievo e spray nero opaco.",
+    dimensions: "30 × 30 cm",
+    category: "legno",
+    subcategory: "bassorilievi",
+    description: [
+      "Coppia, maschio e femmina, intenti a ballare i passi della tradizione folkloristica sarda."
+    ],
+    cover: "assets/images/BASSORILIEVI/ballo.png"
+  },
+  {
+    id: "opera-10",
+    title: "Coro",
+    year: 2019,
+    medium: "Incisione fatta a mano con mezzi rotativi e scalpelli. Bassorilievo e spray nero opaco.",
+    dimensions: "60 × 20 cm",
+    category: "legno",
+    subcategory: "bassorilievi",
+    description: [
+      "Un coro sardo disposto a cerchio, con il maestro al centro."
+    ],
+    cover: "assets/images/BASSORILIEVI/coro.png"
+  },
+  {
+    id: "opera-11",
+    title: "Gesù",
+    year: 2019,
+    medium: "Incisione fatta a mano con mezzi rotativi e scalpelli. Bassorilievo e spray nero opaco.",
+    dimensions: "70 × 40 cm",
+    category: "legno",
+    subcategory: "bassorilievi",
+    description: [
+      "Un Gesù sporco e macchiato, immagine tratta dal film Gesù di Nazareth con Robert Powell."
+    ],
+    cover: "assets/images/BASSORILIEVI/gesù.png"
+  },
+  {
+    id: "opera-12",
+    title: "Maschera",
+    year: 2019,
+    medium: "Incisione fatta a mano con mezzi rotativi e scalpelli. Bassorilievo e spray nero opaco.",
+    dimensions: "10 × 25 cm",
+    category: "legno",
+    subcategory: "bassorilievi",
+    description: [
+      "Su Boe, la celebre maschera zoomorfa del carnevale tradizionale di Ottana (Nuoro)."
+    ],
+    cover: "assets/images/BASSORILIEVI/maschera.png"
+  },
+  {
+    id: "opera-13",
+    title: "Maschere",
+    year: 2019,
+    medium: "Pirografia.",
+    dimensions: "30 × 30 cm",
+    category: "legno",
+    subcategory: "bassorilievi",
+    description: [
+      "Mamuthones, le celebri maschere tradizionali del carnevale di Mamoiada."
+    ],
+    cover: "assets/images/BASSORILIEVI/maschere.png"
   }
 ];
 
