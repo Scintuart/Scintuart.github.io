@@ -767,7 +767,7 @@ section { padding-block: clamp(5rem, 10vw, 10rem); }
 .subcategory-banner {
   display: none;
   width: 100%;
-  height: clamp(160px, 26vw, 320px);
+  height: clamp(240px, 48vw, 600px);
   margin-top: clamp(2rem, 5vw, 3.5rem);
   background-size: cover;
   background-position: center;
