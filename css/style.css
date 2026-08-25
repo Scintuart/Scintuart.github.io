@@ -148,6 +148,36 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   width: auto;
   display: block;
 }
+/* Sulla home, in cima alla pagina, l'header è trasparente e sovrasta la
+   nuova superficie nera dell'hero: qui logo/nav passano alla variante
+   chiara (già prevista: logo-white.png), tornando alla normale variante
+   scura non appena si scrolla oltre l'hero (stessa classe .is-scrolled
+   già usata per il sito). Nessuna modifica sulle altre pagine, dove
+   l'header resta sempre come oggi. */
+.brand-logo-on-dark { display: none; }
+.brand img.brand-logo-on-dark { display: none; }
+.site-header--on-dark:not(.is-scrolled) .brand img.brand-logo-default { display: none; }
+.site-header--on-dark:not(.is-scrolled) .brand img.brand-logo-on-dark { display: block; }
+
+.site-header--on-dark:not(.is-scrolled) .nav-desktop a,
+.site-header--on-dark:not(.is-scrolled) .lang-switch button {
+  color: rgba(250, 248, 244, 0.7);
+}
+.site-header--on-dark:not(.is-scrolled) .nav-desktop a:hover,
+.site-header--on-dark:not(.is-scrolled) .nav-desktop a.is-active,
+.site-header--on-dark:not(.is-scrolled) .lang-switch button:hover {
+  color: var(--bg);
+}
+.site-header--on-dark:not(.is-scrolled) .lang-switch button[aria-current="true"] {
+  color: var(--accent-dim);
+}
+.site-header--on-dark:not(.is-scrolled) .lang-switch-sep {
+  color: rgba(250, 248, 244, 0.3);
+}
+.site-header--on-dark:not(.is-scrolled) .nav-toggle span {
+  background: var(--bg);
+}
+
 .brand .brand-fallback {
   font-family: var(--font-display);
   font-size: 1.15rem;
@@ -274,14 +304,17 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
 
 /* =========================================================
    HOMEPAGE — HERO
-   Direzione museale: molto spazio bianco, nessuna immagine a
-   piena pagina, nessuna animazione di deriva. L'opera in hero
-   è trattata come una stampa con ampio passe-partout: bordo
-   sottile, aria intorno, didascalia statica come una targhetta.
+   Il testo e l'opera in evidenza condividono un'unica superficie nera a
+   piena larghezza — lo stesso nero dello sfondo della fotografia stessa,
+   non un tono diverso — così l'immagine non sembra un riquadro separato.
+   L'immagine mantiene dimensioni/proporzioni/posizione invariate: nessun
+   object-fit, nessun ritaglio, nessun ingrandimento. Solo il fondo si
+   estende ai lati.
    ========================================================= */
 .hero {
   padding-top: clamp(8rem, 16vw, 12rem);
   padding-bottom: clamp(3rem, 7vw, 5rem);
+  background: #010101; /* stesso nero campionato dallo sfondo di hero-work.jpg */
 }
 
 .hero-inner { padding-inline: var(--gutter); }
@@ -291,7 +324,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   align-items: center;
   gap: 1rem;
 }
-.hero-eyebrow .rule { width: 40px; height: 1px; background: var(--line-strong); }
+.hero-eyebrow .rule { width: 40px; height: 1px; background: rgba(250, 248, 244, 0.35); }
+.hero-eyebrow .eyebrow { color: var(--accent-dim); }
 
 .hero-name {
   margin-top: 1.5rem;
@@ -299,6 +333,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   line-height: 1.02;
   max-width: 18ch;
   font-weight: 400;
+  color: var(--bg);
 }
 
 .hero-meta {
@@ -309,9 +344,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   font-family: var(--font-mono);
   font-size: 0.76rem;
   letter-spacing: 0.06em;
-  color: var(--text-muted);
+  color: rgba(250, 248, 244, 0.62);
 }
-.hero-meta strong { color: var(--text); font-weight: 500; }
+.hero-meta strong { color: var(--bg); font-weight: 500; }
 .hero-meta a {
   color: inherit;
   border-bottom: 1px solid transparent;
@@ -319,17 +354,18 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
 }
 .hero-meta a:hover,
 .hero-meta a:focus-visible {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: var(--accent-dim);
+  border-bottom-color: var(--accent-dim);
 }
 
-/* L'opera in evidenza: presentata come stampa incorniciata,
-   mai a piena pagina, mai con overlay o zoom. */
+/* L'opera in evidenza: stessa dimensione, proporzioni e posizione di
+   sempre (figure max-width 620px, centrata, img width:100% height:auto —
+   nessun object-fit, nessun crop). Il contenitore non ha più uno sfondo o
+   un bordo propri: eredita il nero di .hero, così testo e immagine
+   sembrano un'unica superficie continua. */
 .hero-frame {
   margin-top: clamp(3rem, 7vw, 5rem);
   padding: clamp(1.5rem, 4vw, 3rem);
-  background: var(--bg-elevated);
-  border: 1px solid var(--line);
 }
 .hero-frame figure {
   max-width: 620px;
@@ -348,11 +384,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
-  color: var(--text-faint);
-  border-top: 1px solid var(--line);
+  color: rgba(250, 248, 244, 0.5);
+  border-top: 1px solid rgba(250, 248, 244, 0.18);
   padding-top: 0.9rem;
 }
-.hero-frame figcaption b { color: var(--text); font-weight: 500; }
+.hero-frame figcaption b { color: var(--bg); font-weight: 500; }
 
 /* =========================================================
    SECTION SCAFFOLDING
