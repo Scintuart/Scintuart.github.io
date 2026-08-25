@@ -58,6 +58,23 @@ function renderHomeTeaser() {
  *  - ?cat=X&sub=Y                          → galleria filtrata per sottocategoria
  * Aggiorna anche il titolo della pagina e il piccolo breadcrumb sopra il titolo.
  */
+/**
+ * Costruisce il breadcrumb con i livelli intermedi cliccabili: ogni
+ * segmento tranne l'ultimo (la pagina corrente) diventa un link verso il
+ * proprio URL. Es. Lavori(link) → Disegno(link) → Disegno digitale(testo).
+ * segments: array di { label, href? } — omettere href per un segmento non
+ * cliccabile (usato per il segmento finale, la pagina in cui ci si trova).
+ */
+function renderBreadcrumb(el, segments) {
+  if (!el) return;
+  el.innerHTML = segments
+    .map((seg, i) => {
+      const isCurrent = i === segments.length - 1 || !seg.href;
+      return isCurrent ? seg.label : `<a href="${seg.href}">${seg.label}</a>`;
+    })
+    .join(" → ");
+}
+
 function renderWorksPage() {
   const listEl = document.querySelector("[data-works-list]");
   if (!listEl || typeof WORKS === "undefined") return; // non siamo su works.html
@@ -102,7 +119,7 @@ function renderWorksPage() {
   // Nessuna categoria in URL, o slug non riconosciuto → archivio completo
   if (!catSlug || !category) {
     document.title = `${t("nav.works")} — Scintuart`;
-    if (breadcrumbEl) breadcrumbEl.textContent = t("works.archiveBreadcrumb");
+    if (breadcrumbEl) renderBreadcrumb(breadcrumbEl, [{ label: t("works.archiveBreadcrumb") }]);
     if (titleEl) titleEl.textContent = t("nav.works");
     if (ledeEl) ledeEl.textContent = t("works.archiveLede");
     if (tilesEl) tilesEl.innerHTML = "";
@@ -116,7 +133,12 @@ function renderWorksPage() {
   // Categoria con sottocategorie (Disegno, Legno) e nessuna scelta → tile
   if (category.subcategories.length && !subcategory) {
     document.title = `${catLabel} — Scintuart`;
-    if (breadcrumbEl) breadcrumbEl.textContent = `${t("nav.works")} → ${catLabel}`;
+    if (breadcrumbEl) {
+      renderBreadcrumb(breadcrumbEl, [
+        { label: t("nav.works"), href: "works.html" },
+        { label: catLabel }
+      ]);
+    }
     if (titleEl) titleEl.textContent = catLabel;
     if (ledeEl) ledeEl.textContent = t("works.chooseSub");
     listEl.innerHTML = "";
@@ -137,9 +159,19 @@ function renderWorksPage() {
 
   document.title = `${activeLabel} — Scintuart`;
   if (breadcrumbEl) {
-    breadcrumbEl.textContent = subLabel
-      ? `${t("nav.works")} → ${catLabel} → ${subLabel}`
-      : `${t("nav.works")} → ${catLabel}`;
+    renderBreadcrumb(
+      breadcrumbEl,
+      subLabel
+        ? [
+            { label: t("nav.works"), href: "works.html" },
+            { label: catLabel, href: `works.html?cat=${catSlug}` },
+            { label: subLabel }
+          ]
+        : [
+            { label: t("nav.works"), href: "works.html" },
+            { label: catLabel }
+          ]
+    );
   }
   if (titleEl) titleEl.textContent = activeLabel;
   if (ledeEl) {

@@ -98,6 +98,20 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   color: var(--accent);
 }
 
+/* Livelli intermedi cliccabili nel breadcrumb (es. Lavori → Disegno →
+   Disegno digitale): stesso colore del testo circostante, con una
+   sottolineatura discreta all'hover per segnalare che sono navigabili.
+   L'ultimo segmento (pagina corrente) resta testo semplice, non un link. */
+[data-breadcrumb] a {
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-s) var(--ease);
+}
+[data-breadcrumb] a:hover,
+[data-breadcrumb] a:focus-visible {
+  border-bottom-color: currentColor;
+}
+
 .lede {
   font-size: clamp(1.05rem, 1.4vw, 1.25rem);
   color: var(--text-muted);
