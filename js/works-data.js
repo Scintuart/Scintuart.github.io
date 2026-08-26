@@ -331,6 +331,165 @@ const WORKS = [
       "Mamuthones, le celebri maschere tradizionali del carnevale di Mamoiada."
     ],
     cover: "assets/images/BASSORILIEVI/maschere.png"
+  },
+
+  // opera-14 … opera-25: 12 opere reali di disegno digitale, dati e
+  // immagini forniti direttamente dall'artista.
+  {
+    id: "opera-14",
+    title: "Toshirō",
+    year: 2025,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "L'attore intento a rilassarsi sul set, sfogando i pensieri con una sigaretta."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/Toshirō_Mifune.png"
+  },
+  {
+    id: "opera-15",
+    title: "RAGNAR",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Travis Fimmel durante le riprese della terza stagione di Vikings."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/RAGNAR.jpg"
+  },
+  {
+    id: "opera-16",
+    title: "THOMAS",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Personaggio principale della serie Peaky Blinders che soffre e riflette sul suo lascito."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/thomas.jpg"
+  },
+  {
+    id: "opera-17",
+    title: "Anthony Hopkins",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Ritratto \"demonizzato\" in Hannibal Lecter, famoso personaggio. La reference era un'immagine normalissima, molto delicata; ne è stato enfatizzato quello che è lo sguardo preoccupante dell'attore, per trasformarlo nel suo personaggio più celebre."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/Anthony_Hopkins.jpg"
+  },
+  {
+    id: "opera-18",
+    title: "Russel",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "L'attore Russell Crowe nei panni di Massimo Decimo Meridio ne \"Il Gladiatore\"."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/russel.png"
+  },
+  {
+    id: "opera-19",
+    title: "ROY",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Rutger Hauer nei panni di Roy Batty, replicante androide, dal film Blade Runner."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/Roy.jpg"
+  },
+  {
+    id: "opera-20",
+    title: "Rachael",
+    year: 2023,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Sean Young nei panni della replicante Rachael dal film Blade Runner."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/Rachael.jpg"
+  },
+  {
+    id: "opera-21",
+    title: "Stanley",
+    year: 2025,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Il regista Stanley Kubrick mentre ascolta qualcosa; la sua testa viaggia, spazia in orizzonti a noi sconosciuti, e gli viene un colpo di genio, simboleggiato da una stella cadente."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/STANLEY.png"
+  },
+  {
+    id: "opera-22",
+    title: "David Lynch",
+    year: 2025,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Il regista ritratto con un tocco di sangue misterioso, come nei casi dei suoi omicidi nei film."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/David_Lynch.png"
+  },
+  {
+    id: "opera-23",
+    title: "Apocalypse Now",
+    year: 2025,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Momento più atteso di tutto il film. Una comparsa iconica di un soldato che esce fuori dall'acqua, uno sguardo attento e sicuro del capitano Benjamin L. Willard."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/apocalypse_now.jpg"
+  },
+  {
+    id: "opera-24",
+    title: "EINAR SELVIK",
+    year: 2022,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Musicista norvegese enfatizzato in chiave pagana e norrena, come una divinità."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/Einar_Selvik.jpg"
+  },
+  {
+    id: "opera-25",
+    title: "Nick Cave",
+    year: 2025,
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    dimensions: "NC",
+    category: "disegno",
+    subcategory: "disegno-digitale",
+    description: [
+      "Cantautore australiano in un momento pensieroso della sua canzone."
+    ],
+    cover: "assets/images/DISEGNO DIGITALE/NIK_Cave.png"
   }
 ];
 
