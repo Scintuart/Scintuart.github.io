@@ -259,9 +259,11 @@ function renderWorkDetail() {
   const next = WORKS[(idx + 1) % WORKS.length];
 
   const categoryLabel = getWorkCategoryLabel(work);
+  const backLink = getWorkBackLink(work);
 
   root.innerHTML = `
     <section class="work-hero container page-intro">
+      ${backLink ? `<a class="btn-line work-back-link reveal" href="${backLink.href}">← ${backLink.label}</a>` : ""}
       <div class="eyebrow reveal">${categoryLabel ? `${categoryLabel} · ${work.year}` : work.year}</div>
       <h1 class="reveal">${title}</h1>
 

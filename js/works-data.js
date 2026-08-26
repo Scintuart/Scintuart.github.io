@@ -81,6 +81,25 @@ function getWorkCategoryLabel(work) {
 }
 
 /**
+ * Link "torna alla sezione" per la pagina di una singola opera: calcolato
+ * dinamicamente dalla categoria/sottocategoria dell'opera, quindi valido
+ * per qualunque sezione del sito (non solo Disegno digitale) senza dover
+ * scrivere un link diverso per ciascuna. Ritorna null se l'opera non ha
+ * una categoria assegnata (es. opere non ancora categorizzate).
+ */
+function getWorkBackLink(work) {
+  if (!work.category) return null;
+  const cat = getCategoryBySlug(work.category);
+  if (!cat) return null;
+  const label = getWorkCategoryLabel(work);
+  if (!label) return null;
+  const href = work.subcategory
+    ? `works.html?cat=${work.category}&sub=${work.subcategory}`
+    : `works.html?cat=${work.category}`;
+  return { href, label };
+}
+
+/**
  * WORKS DATA
  * ----------
  * Ogni oggetto rappresenta un'opera. Per aggiungere una nuova opera,
