@@ -339,20 +339,20 @@ const WORKS = [
     id: "opera-14",
     title: "Toshirō",
     year: 2025,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
       "L'attore intento a rilassarsi sul set, sfogando i pensieri con una sigaretta."
     ],
-    cover: "assets/images/DISEGNO DIGITALE/Toshirō_Mifune.png"
+    cover: "assets/images/DISEGNO DIGITALE/Toshiro_Mifune.png"
   },
   {
     id: "opera-15",
     title: "RAGNAR",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
@@ -365,12 +365,12 @@ const WORKS = [
     id: "opera-16",
     title: "THOMAS",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Personaggio principale della serie Peaky Blinders che soffre e riflette sul suo lascito."
+      "Il personaggio principale di Peaky Blinders, rappresentato in un momento di sofferenza e riflessione sul proprio lascito."
     ],
     cover: "assets/images/DISEGNO DIGITALE/thomas.jpg"
   },
@@ -378,12 +378,12 @@ const WORKS = [
     id: "opera-17",
     title: "Anthony Hopkins",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Ritratto \"demonizzato\" in Hannibal Lecter, famoso personaggio. La reference era un'immagine normalissima, molto delicata; ne è stato enfatizzato quello che è lo sguardo preoccupante dell'attore, per trasformarlo nel suo personaggio più celebre."
+      "Ritratto \"demonizzato\" di Anthony Hopkins nei panni di Hannibal Lecter. La reference era un'immagine normale e molto delicata; nello sviluppo del disegno è stato enfatizzato lo sguardo preoccupante dell'attore, trasformandolo nel suo personaggio più celebre."
     ],
     cover: "assets/images/DISEGNO DIGITALE/Anthony_Hopkins.jpg"
   },
@@ -391,12 +391,12 @@ const WORKS = [
     id: "opera-18",
     title: "Russel",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "L'attore Russell Crowe nei panni di Massimo Decimo Meridio ne \"Il Gladiatore\"."
+      "Russell Crowe nei panni di Massimo Decimo Meridio ne Il Gladiatore."
     ],
     cover: "assets/images/DISEGNO DIGITALE/russel.png"
   },
@@ -404,12 +404,12 @@ const WORKS = [
     id: "opera-19",
     title: "ROY",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Rutger Hauer nei panni di Roy Batty, replicante androide, dal film Blade Runner."
+      "Rutger Hauer nei panni di Roy Batty, il replicante androide protagonista di Blade Runner."
     ],
     cover: "assets/images/DISEGNO DIGITALE/Roy.jpg"
   },
@@ -417,7 +417,7 @@ const WORKS = [
     id: "opera-20",
     title: "Rachael",
     year: 2023,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
@@ -430,12 +430,12 @@ const WORKS = [
     id: "opera-21",
     title: "Stanley",
     year: 2025,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Il regista Stanley Kubrick mentre ascolta qualcosa; la sua testa viaggia, spazia in orizzonti a noi sconosciuti, e gli viene un colpo di genio, simboleggiato da una stella cadente."
+      "Il regista Stanley Kubrick mentre ascolta qualcosa, immerso nei propri pensieri e proiettato verso orizzonti sconosciuti. Il colpo di genio è rappresentato simbolicamente da una stella cadente."
     ],
     cover: "assets/images/DISEGNO DIGITALE/STANLEY.png"
   },
@@ -443,12 +443,12 @@ const WORKS = [
     id: "opera-22",
     title: "David Lynch",
     year: 2025,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Il regista ritratto con un tocco di sangue misterioso, come nei casi dei suoi omicidi nei film."
+      "Il regista David Lynch ritratto con un tocco di sangue misterioso, richiamando l'atmosfera dei casi di omicidio presenti nei suoi film."
     ],
     cover: "assets/images/DISEGNO DIGITALE/David_Lynch.png"
   },
@@ -456,12 +456,12 @@ const WORKS = [
     id: "opera-23",
     title: "Apocalypse Now",
     year: 2025,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Momento più atteso di tutto il film. Una comparsa iconica di un soldato che esce fuori dall'acqua, uno sguardo attento e sicuro del capitano Benjamin L. Willard."
+      "Il momento più atteso del film: la comparsa iconica del soldato che emerge dall'acqua, con lo sguardo attento e sicuro del capitano Benjamin L. Willard."
     ],
     cover: "assets/images/DISEGNO DIGITALE/apocalypse_now.jpg"
   },
@@ -469,12 +469,12 @@ const WORKS = [
     id: "opera-24",
     title: "EINAR SELVIK",
     year: 2022,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Musicista norvegese enfatizzato in chiave pagana e norrena, come una divinità."
+      "Il musicista norvegese Einar Selvik rappresentato in chiave pagana e norrena, enfatizzato fino ad assumere l'aspetto di una figura divina."
     ],
     cover: "assets/images/DISEGNO DIGITALE/Einar_Selvik.jpg"
   },
@@ -482,12 +482,12 @@ const WORKS = [
     id: "opera-25",
     title: "Nick Cave",
     year: 2025,
-    medium: "Disegno con tavoletta grafica, pennelli Photoshop.",
+    medium: "Disegno con tavoletta grafica, pennelli Photoshop",
     dimensions: "NC",
     category: "disegno",
     subcategory: "disegno-digitale",
     description: [
-      "Cantautore australiano in un momento pensieroso della sua canzone."
+      "Il cantautore australiano Nick Cave rappresentato in un momento pensieroso, immerso nell'atmosfera della propria canzone."
     ],
     cover: "assets/images/DISEGNO DIGITALE/NIK_Cave.png"
   }
