@@ -31,7 +31,17 @@ const CATEGORIES = [
     subcategories: [
       { slug: "scultura", label: { it: "Scultura", en: "Sculpture" } },
       { slug: "bassorilievi", label: { it: "Bassorilievi", en: "Bas-reliefs" } },
-      { slug: "gioielli", label: { it: "Gioielli", en: "Jewellery" } }
+      {
+        slug: "gioielli",
+        label: { it: "Gioielli", en: "Jewellery" },
+        // Testo introduttivo opzionale, mostrato solo in cima alla galleria
+        // di questa sottocategoria (vedi render.js). Campo facoltativo:
+        // le altre sottocategorie non lo hanno e restano invariate.
+        intro: {
+          it: "Questi gioielli sono esemplari unici realizzati nel 2025, frutto di una ricerca sulla materia, sulla forma e sul rapporto tra legno e ornamento. Il legno d'ulivo viene lavorato interamente a mano e, in alcuni casi, arricchito con tinte per legno e foglia oro. Ogni pezzo nasce unico: le venature, le forme e il gesto manuale rendono ogni esemplare diverso da tutti gli altri. Il linguaggio, le tecniche e le forme restano invece un terreno di ricerca aperto, che può dare origine a nuovi gioielli affini ma mai identici. I pezzi qui documentati sono già stati venduti: restano come testimonianza del percorso e dello stile dell'autore.",
+          en: "These jewellery pieces are unique examples made in 2025, born from a study of material, form and the relationship between wood and ornament. The olive wood is entirely hand-worked and, in some pieces, enriched with wood stains and gold leaf. Each piece is unique in itself: the grain, the shapes and the manual gesture make every example different from all others. The language, techniques and forms remain instead an open field of research, one that can give rise to new pieces — related, but never identical. The works documented here have already been sold: they remain as testimony to the author's path and style."
+        }
+      }
     ]
   },
   {
@@ -509,6 +519,222 @@ const WORKS = [
       "Il cantautore australiano Nick Cave rappresentato in un momento pensieroso, immerso nell'atmosfera della propria canzone."
     ],
     cover: "assets/images/DISEGNO DIGITALE/NIK_Cave.png"
+  },
+
+  // opera-26 … opera-41: 16 gioielli in legno d'ulivo, lavorati a mano,
+  // realizzati nel 2025. Pezzi già venduti: presentati come documentazione
+  // del linguaggio artistico dell'autore, non come catalogo disponibile —
+  // nessun riferimento a disponibilità, acquisto o prezzo. Tecnica indicata
+  // in modo generale: precisa solo dove la fotografia lo rende certo (foglia
+  // oro, filo metallico, pietra), senza attribuire una tinta per legno dove
+  // non distinguibile con certezza dalla variazione naturale del legno.
+  {
+    id: "opera-26",
+    title: "Orecchini I",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-01.jpg"
+  },
+  {
+    id: "opera-27",
+    title: "Orecchini II",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-02.jpg"
+  },
+  {
+    id: "opera-28",
+    title: "Orecchini III",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con applicazione di foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-03.jpg"
+  },
+  {
+    id: "opera-29",
+    title: "Orecchini IV",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettagli in foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-04.jpg"
+  },
+  {
+    id: "opera-30",
+    title: "Orecchini V",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con applicazione di foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-05.jpg"
+  },
+  {
+    id: "opera-31",
+    title: "Orecchini VI",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con applicazione di foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-06.jpg"
+  },
+  {
+    id: "opera-32",
+    title: "Orecchini VII",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con avvolgimento in filo metallico.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-07.jpg"
+  },
+  {
+    id: "opera-33",
+    title: "Orecchini VIII",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con avvolgimento in filo metallico.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-08.jpg"
+  },
+  {
+    id: "opera-34",
+    title: "Orecchini IX",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con applicazione di foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-09.jpg"
+  },
+  {
+    id: "opera-35",
+    title: "Orecchini X",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettaglio in foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/orecchini-10.jpg"
+  },
+  {
+    id: "opera-36",
+    title: "Collana I",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con tinta per legno e foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con interventi di tinta e foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/collana-01.jpg"
+  },
+  {
+    id: "opera-37",
+    title: "Collana II",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettaglio in pietra e charm in metallo.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/collana-02.jpg"
+  },
+  {
+    id: "opera-38",
+    title: "Collana III",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con tinta per legno.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di tinta per legno. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/collana-03.jpg"
+  },
+  {
+    id: "opera-39",
+    title: "Collana IV",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettaglio in pietra.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo, realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/collana-04.jpg"
+  },
+  {
+    id: "opera-40",
+    title: "Collana V",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettaglio in foglia oro.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplare unico in legno d'ulivo con intervento di foglia oro. Realizzato nel 2025. Pezzo già venduto."
+    ],
+    cover: "assets/images/GIOIELLI/collana-05.jpg"
+  },
+  {
+    id: "opera-41",
+    title: "Anelli",
+    year: 2025,
+    medium: "Legno d'ulivo lavorato a mano, con dettagli in pirite e metallo.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "gioielli",
+    description: [
+      "Esemplari unici in legno d'ulivo, realizzati nel 2025. Pezzi già venduti."
+    ],
+    cover: "assets/images/GIOIELLI/anelli.jpg"
   }
 ];
 
