@@ -167,28 +167,6 @@ const WORKS = [
     }
   },
   {
-    id: "opera-2",
-    title: "Frattura Silenziosa",
-    year: 2023,
-    medium: "Scultura in bronzo",
-    dimensions: "60 × 40 × 35 cm",
-    category: "legno",
-    subcategory: "scultura",
-    description: [
-      "Testo segnaposto: descrivi qui il concetto, il contesto e il processo dietro quest'opera."
-    ],
-    cover: "assets/images/opera-2-cover.svg",
-    gallery: [
-      "assets/images/opera-2-gallery-1.svg",
-      "assets/images/opera-2-gallery-2.svg",
-      "assets/images/opera-2-gallery-3.svg"
-    ],
-    video: {
-      src: "assets/video/opera-2.mp4",
-      poster: "assets/images/opera-2-video-poster.svg"
-    }
-  },
-  {
     id: "opera-4",
     title: "Controluce",
     year: 2022,
