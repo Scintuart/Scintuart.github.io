@@ -748,6 +748,22 @@ const WORKS = [
       "assets/images/SCULTURA/thx-1138-03.jpg"
     ]
   },
+  {
+    id: "opera-44",
+    title: "Madonna",
+    year: 2024,
+    medium: "Quercia da sughero. Tecnica artigianale di intaglio a sgorbia e basso rilievo.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "Opera ispirata alla figura della madre di Gesù nella Pietà di Michelangelo Buonarroti. Realizzata in quercia da sughero attraverso una tecnica artigianale di intaglio a sgorbia e basso rilievo. Il volto e la figura emergono direttamente dalla materia lignea, valorizzando le venature naturali del legno e il carattere manuale della lavorazione."
+    ],
+    cover: "assets/images/SCULTURA/madonna-02.jpg",
+    gallery: [
+      "assets/images/SCULTURA/madonna-01.jpg"
+    ]
+  },
 ];
 // Utility condivise
 function getWorkById(id) {
