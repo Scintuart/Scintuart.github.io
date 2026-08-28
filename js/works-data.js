@@ -735,6 +735,23 @@ const WORKS = [
       "Esemplari unici in legno d'ulivo, realizzati nel 2025. Pezzi già venduti."
     ],
     cover: "assets/images/GIOIELLI/anelli.jpg"
+  },
+  {
+    id: "opera-42",
+    title: "Albero",
+    year: 2024,
+    medium: "Quercia sarda, pero e faggio. Lavorazione a scalpelli, tinta per legno noce, spray al bronzo.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "Un pezzo che vuole simboleggiare l'imponenza della natura, la bellezza delle sue forme, le curve, l'abbondanza e la diversità dei suoi frutti."
+    ],
+    cover: "assets/images/SCULTURA/albero-01.jpg",
+    gallery: [
+      "assets/images/SCULTURA/albero-02.jpg",
+      "assets/images/SCULTURA/albero-03.jpg"
+    ]
   }
 ];
 
