@@ -752,9 +752,25 @@ const WORKS = [
       "assets/images/SCULTURA/albero-02.jpg",
       "assets/images/SCULTURA/albero-03.jpg"
     ]
-  }
+  },
+  {
+    id: "opera-43",
+    title: "Testa THX 1138",
+    year: 2024,
+    medium: "Abete. Tecniche miste artigianali, scalpelli, sgorbie e sistemi rotativi.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "Questo è il primo approccio a tutto tondo. Un esplorazione del mondo scultoreo ancora inconsapevole. Opera mai ultimata."
+    ],
+    cover: "assets/images/SCULTURA/thx-1138-01.jpg",
+    gallery: [
+      "assets/images/SCULTURA/thx-1138-02.jpg",
+      "assets/images/SCULTURA/thx-1138-03.jpg"
+    ]
+  },
 ];
-
 // Utility condivise
 function getWorkById(id) {
   return WORKS.find((w) => w.id === id);
