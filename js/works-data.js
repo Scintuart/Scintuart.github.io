@@ -740,7 +740,7 @@ const WORKS = [
     category: "legno",
     subcategory: "scultura",
     description: [
-      "Questo è il primo approccio a tutto tondo. Un esplorazione del mondo scultoreo ancora inconsapevole. Opera mai ultimata."
+      "Questo è il primo approccio a tutto tondo. Un'esplorazione del mondo scultoreo ancora inconsapevole. Opera mai ultimata."
     ],
     cover: "assets/images/SCULTURA/thx-1138-01.jpg",
     gallery: [
@@ -764,7 +764,35 @@ const WORKS = [
       "assets/images/SCULTURA/madonna-01.jpg"
     ]
   },
+  {
+    id: "opera-45",
+    title: "La Madre di Tutte le Madri",
+    year: 2024,
+    medium: "Quercia sarda. Scalpelli, tinta per legno noce, spray acrilico protettivo.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "La madre di tutte le madri ha il volto scavato, non dalla poesia, ma dal tempo bastardo e dai figli ingrati. Ti ha insegnato a camminare mentre teneva il mondo in equilibrio sulla testa, ora guarda in silenzio e non le piace quello che vede.",
+      "Indossa memorie cucite in stoffe che parlano di radici e di futuro. È bellezza che ispira, forza che vacilla ma che non cade.",
+      "Nel suo volto si legge la delusione, nei suoi occhi, il giudizio silenzioso di chi ha dato tutto.",
+      "\"La Madre di Tutte le Madri\" è un tributo alla Madre antica e moderna, che osserva i suoi figli con amore adirato, e ci ricorda che le fondamenta del futuro sono fatte del rispetto verso chi ci ha generati.",
+      "Nel suo sguardo, giudice e riflessivo, vive la scontentezza di chi ha dato tutto e ora osserva, in silenzio, ciò che i suoi figli hanno fatto di quel dono."
+    ],
+    cover: "assets/images/SCULTURA/madre-di-tutte-le-madri-01.jpg",
+    gallery: [
+      "assets/images/SCULTURA/madre-di-tutte-le-madri-02.jpg",
+      "assets/images/SCULTURA/madre-di-tutte-le-madri-03.jpg",
+      "assets/images/SCULTURA/madre-di-tutte-le-madri-04.jpg"
+    ],
+    // Campo opzionale (Opzione B concordata): didascalia per singola
+    // immagine di galleria, allineata per indice a "gallery". Non presente
+    // in nessun'altra opera — retrocompatibile al 100%: render.js la usa
+    // solo se esiste, senza alterare il comportamento delle altre gallerie.
+    galleryCaptions: [null, null, "In corso d'opera — non versione finale"]
+  }
 ];
+
 // Utility condivise
 function getWorkById(id) {
   return WORKS.find((w) => w.id === id);

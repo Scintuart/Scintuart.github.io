@@ -84,6 +84,7 @@ function renderWorksPage() {
   const titleEl = document.querySelector("[data-page-title]");
   const ledeEl = document.querySelector("[data-page-lede]");
   const bannerEl = document.querySelector("[data-subcategory-banner]");
+  const introEl = document.querySelector("[data-subcategory-intro]");
 
   // La fascia visiva è disattivata di default: viene accesa esplicitamente
   // solo per la combinazione esatta cat=disegno&sub=disegno-digitale, mai
@@ -123,6 +124,7 @@ function renderWorksPage() {
     if (titleEl) titleEl.textContent = t("nav.works");
     if (ledeEl) ledeEl.textContent = t("works.archiveLede");
     if (tilesEl) tilesEl.innerHTML = "";
+    if (introEl) introEl.textContent = "";
     renderWorksList(WORKS, listEl);
     return;
   }
@@ -141,6 +143,7 @@ function renderWorksPage() {
     }
     if (titleEl) titleEl.textContent = catLabel;
     if (ledeEl) ledeEl.textContent = t("works.chooseSub");
+    if (introEl) introEl.textContent = "";
     listEl.innerHTML = "";
     renderCategoryTiles(category, tilesEl);
     return;
@@ -180,6 +183,7 @@ function renderWorksPage() {
       : t("works.emptySection");
   }
   if (tilesEl) tilesEl.innerHTML = "";
+  if (introEl) introEl.textContent = subcategory && subcategory.intro ? localize(subcategory.intro) : "";
   renderWorksList(works, listEl);
 }
 
@@ -292,10 +296,19 @@ function renderWorkDetail() {
             </div>
             <div class="gallery-grid reveal">
               ${work.gallery
-                .map(
-                  (src, i) =>
-                    `<figure class="g-item"><img src="${src}" alt="${title} — ${i + 1}" loading="lazy" /></figure>`
-                )
+                .map((src, i) => {
+                  // Didascalia opzionale per singola immagine (es. "In corso
+                  // d'opera"): presente solo se l'opera definisce
+                  // galleryCaptions per quell'indice. Retrocompatibile:
+                  // tutte le altre opere non hanno questo campo e il
+                  // comportamento resta identico a prima (nessuna
+                  // didascalia, solo l'immagine).
+                  const caption = work.galleryCaptions && work.galleryCaptions[i];
+                  return `<figure class="g-item">
+                      <img src="${src}" alt="${title} — ${i + 1}" loading="lazy" />
+                      ${caption ? `<figcaption class="g-item-caption">${caption}</figcaption>` : ""}
+                    </figure>`;
+                })
                 .join("")}
             </div>
           </section>`

@@ -118,6 +118,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spac
   max-width: 46ch;
 }
 
+/* Testo introduttivo opzionale di una sottocategoria (es. Gioielli):
+   vuoto per tutte le sezioni che non lo definiscono, nel qual caso non
+   occupa spazio. Quando presente, un breve paragrafo prima della galleria. */
+.subcategory-intro {
+  max-width: 62ch;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.subcategory-intro:empty { display: none; margin: 0; }
+
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -649,7 +662,7 @@ section { padding-block: clamp(5rem, 10vw, 10rem); }
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
-.gallery-grid .g-item { overflow: hidden; cursor: zoom-in; background: var(--bg-elevated); }
+.gallery-grid .g-item { position: relative; overflow: hidden; cursor: zoom-in; background: var(--bg-elevated); }
 .gallery-grid .g-item:nth-child(1) { grid-column: span 4; aspect-ratio: 4/3; }
 .gallery-grid .g-item:nth-child(2) { grid-column: span 2; aspect-ratio: 3/4; }
 .gallery-grid .g-item:nth-child(3) { grid-column: span 3; aspect-ratio: 4/3; }
@@ -659,6 +672,25 @@ section { padding-block: clamp(5rem, 10vw, 10rem); }
   transition: opacity var(--dur-s) var(--ease);
 }
 .gallery-grid .g-item:hover img { opacity: 0.9; }
+
+/* Didascalia opzionale per singola immagine di galleria (es. "In corso
+   d'opera"): overlay in basso sull'immagine, visibile solo quando l'opera
+   la definisce (galleryCaptions in works-data.js). Non altera il layout a
+   griglia esistente: è posizionata in absolute dentro il contenitore già
+   presente (.g-item), quindi non ha alcun effetto sulle altre gallerie. */
+.g-item-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.6rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: linear-gradient(to top, rgba(23, 20, 15, 0.78), rgba(23, 20, 15, 0));
+}
 
 /* Video */
 .work-video {
