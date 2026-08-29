@@ -167,7 +167,6 @@ const WORKS = [
     }
   },
   {
-  {
     id: "opera-4",
     title: "Controluce",
     year: 2022,
