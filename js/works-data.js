@@ -819,6 +819,53 @@ const WORKS = [
       "assets/images/SCULTURA/san-valentino-07.jpg",
       "assets/images/SCULTURA/san-valentino-08.jpg"
     ]
+  },
+  {
+    id: "opera-47",
+    title: "CHI SEI",
+    year: 2026,
+    medium: "Legno d'ulivo, scolpito da un unico tronco. Lavorazione interamente a mano con scalpelli e utensili rotativi.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "Eri un pezzo d'ulivo imponente. Di quelli che non devi affrontare, ma sfidare. Non avevo mai tenuto in mano qualcosa di così antico e ostinato. Sembrava una montagna, e forse lo era.",
+      "È la curiosità, quella strana e testarda compagna che mi ha sempre portato dove non sapevo di voler andare, ad avermi messo lo scalpello in mano. Un passo. Poi un altro. La salita diventava discesa senza che io me ne accorgessi.",
+      "Ho seguito le venature come si seguono i sentieri di una terra che non conosci: con rispetto, ma col timore di perdermi.",
+      "A un certo punto... qualcuno ha iniziato a uscire. Piano. Come chi non ha fretta, perché ha già aspettato dentro quella corteccia più anni di quanti io ne abbia vissuti.",
+      "Non sapevo chi fossi, ma ho continuato lo stesso.",
+      "Ora sei qui, Donna. Un'idea di costume sardo, uno sguardo che viene da lontano. Sei uscita da me, ti ho inventata.",
+      "Ma la verità è un'altra... eri già lì, nascosta nelle fibre di un ulivo che aveva deciso, molto prima di me, la sua forma finale.",
+      "E adesso sono io a chiederti: sei tu la meraviglia uscita dalle mie mani, o sono io lo scultore che ho trovato, finalmente, dentro di te?"
+    ],
+    cover: "assets/images/SCULTURA/chi-sei-white-01.jpg",
+    gallery: [
+      "assets/images/SCULTURA/chi-sei-white-02.jpg",
+      "assets/images/SCULTURA/chi-sei-white-03.jpg",
+      "assets/images/SCULTURA/chi-sei-white-04.jpg",
+      "assets/images/SCULTURA/chi-sei-white-05.jpg",
+      "assets/images/SCULTURA/chi-sei-white-06.jpg",
+      "assets/images/SCULTURA/chi-sei-white-07.jpg",
+      "assets/images/SCULTURA/chi-sei-black-01.jpg",
+      "assets/images/SCULTURA/chi-sei-black-02.jpg",
+      "assets/images/SCULTURA/chi-sei-black-03.jpg",
+      "assets/images/SCULTURA/chi-sei-black-04.jpg",
+      "assets/images/SCULTURA/chi-sei-black-05.jpg",
+      "assets/images/SCULTURA/chi-sei-black-06.jpg",
+      "assets/images/SCULTURA/chi-sei-black-07.jpg",
+      "assets/images/SCULTURA/chi-sei-black-08.jpg",
+      "assets/images/SCULTURA/chi-sei-black-09.jpg",
+      "assets/images/SCULTURA/chi-sei-black-10.jpg"
+    ],
+    // Le fotografie sono due scenari distinti della STESSA opera (fondo
+    // chiaro e fondo nero), non due opere diverse. Uso il meccanismo di
+    // didascalia opzionale già esistente (introdotto per "La Madre di
+    // Tutte le Madri") solo per etichettare l'inizio di ciascun gruppo
+    // all'interno della galleria — nessuna modifica al sistema.
+    galleryCaptions: [
+      "WHITE", null, null, null, null, null,
+      "BLACK", null, null, null, null, null, null, null, null, null
+    ]
   }
 ];
 
