@@ -167,6 +167,28 @@ const WORKS = [
     }
   },
   {
+    id: "opera-2",
+    title: "Frattura Silenziosa",
+    year: 2023,
+    medium: "Scultura in bronzo",
+    dimensions: "60 × 40 × 35 cm",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "Testo segnaposto: descrivi qui il concetto, il contesto e il processo dietro quest'opera."
+    ],
+    cover: "assets/images/opera-2-cover.svg",
+    gallery: [
+      "assets/images/opera-2-gallery-1.svg",
+      "assets/images/opera-2-gallery-2.svg",
+      "assets/images/opera-2-gallery-3.svg"
+    ],
+    video: {
+      src: "assets/video/opera-2.mp4",
+      poster: "assets/images/opera-2-video-poster.svg"
+    }
+  },
+  {
     id: "opera-4",
     title: "Controluce",
     year: 2022,
@@ -790,6 +812,35 @@ const WORKS = [
     // in nessun'altra opera — retrocompatibile al 100%: render.js la usa
     // solo se esiste, senza alterare il comportamento delle altre gallerie.
     galleryCaptions: [null, null, "In corso d'opera — non versione finale"]
+  },
+  {
+    id: "opera-46",
+    title: "San Valentino",
+    year: 2025,
+    medium: "Quercia sarda. Tecniche artigianali scultoree con sgorbie e scalpelli, finitura a spray acrilico rosso.",
+    dimensions: "NC",
+    category: "legno",
+    subcategory: "scultura",
+    description: [
+      "È passato Cupido? Forse sì. ❤️",
+      "Realizzata su commissione per tutti gli innamorati, quest'opera è dedicata a chi sceglie di amarsi ogni giorno.",
+      "Le differenze, i caratteri, i compromessi e le complicazioni della vita di coppia, qui, perdono di significato. Attraverso un'armonia di forme e tonalità, le due figure diventano complici: diverse, eppure profondamente unite.",
+      "Le venature del legno di quercia sarda raccontano da una parte un animo forte, intenso e creativo; dall'altra, la dolcezza più pura. Due personalità differenti, nate però dalla stessa materia.",
+      "E poi, al centro, quel cuore rosso, vivo.",
+      "Un battito condiviso.",
+      "Il simbolo di ciò che li unisce.",
+      "Perché, a volte, basta un semplice sguardo per perdersi nell'amore."
+    ],
+    cover: "assets/images/SCULTURA/san-valentino-01.jpg",
+    gallery: [
+      "assets/images/SCULTURA/san-valentino-02.jpg",
+      "assets/images/SCULTURA/san-valentino-03.jpg",
+      "assets/images/SCULTURA/san-valentino-04.jpg",
+      "assets/images/SCULTURA/san-valentino-05.jpg",
+      "assets/images/SCULTURA/san-valentino-06.jpg",
+      "assets/images/SCULTURA/san-valentino-07.jpg",
+      "assets/images/SCULTURA/san-valentino-08.jpg"
+    ]
   }
 ];
 
